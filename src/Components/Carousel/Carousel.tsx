@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import slider1 from '../../assets/Images/Banner/banner1.jpg'
 import slider2 from '../../assets/Images/Banner/banner2.jpg'
 import slider3 from '../../assets/Images/Banner/bannner3.jpg'
-import slider4 from '../../assets/Images/Banner/banner4.jpg'
+import slider4 from '../../assets/Images/Banner/Banner4.jpg'
 import slider5 from '../../assets/Images/Banner/banner5.jpg'
+
 
 const images = [
   slider1,
