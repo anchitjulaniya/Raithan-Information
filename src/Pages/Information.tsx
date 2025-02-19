@@ -10,9 +10,8 @@ import PaddyTransplantors from '../assets/Images/Equipments/PaddyTransplantors.j
 import Mechanics from '../assets/Images/Equipments/Mechanics.png'
 import ImageCard from '../Components/ImageCard/ImageCard'
 import Carousel from '../Components/Carousel/Carousel'
-
-type Props = {
-  
+interface Props {
+  setopenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Information: React.FC<Props> = ({setopenModal}) => {

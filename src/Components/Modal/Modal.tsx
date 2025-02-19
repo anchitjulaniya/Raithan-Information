@@ -1,12 +1,10 @@
 import React from 'react'
 
 type Props = {
-  handleClickCloseModal: () => void,
-  openModal: boolean,
   setopenModal: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
-const Modal: React.FC<Props> = ({ openModal, setopenModal }) => {
+const Modal: React.FC<Props> = ({ setopenModal }) => {
   const handleClickCloseModal = ()=> {
     setopenModal(false);
   }

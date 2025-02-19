@@ -10,7 +10,7 @@ function App() {
   return (
     <div className=''>
       <Information setopenModal={setopenModal} />
-      {openModal && <Modal openModal={openModal} setopenModal={setopenModal} />}
+      {openModal && <Modal setopenModal={setopenModal} />}
     </div>
   )
 }
