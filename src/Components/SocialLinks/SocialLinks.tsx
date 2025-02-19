@@ -1,8 +1,7 @@
 import "./SocialLinks.css";
 
-type Props = {};
 
-const SocialLinks = (props: Props) => {
+const SocialLinks = () => {
   return (
     <div>
       <ul className="example-2">
