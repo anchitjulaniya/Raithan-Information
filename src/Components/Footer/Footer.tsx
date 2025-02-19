@@ -1,9 +1,7 @@
 import raithanLogo from '../../assets/Images/raitanlogo.png'
 import SocialLinks from '../SocialLinks/SocialLinks'
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <section className="border-t border-gray-200 py-8">
       <div className='flex flex-col md:flex-row items-center py-6 w-full'>
