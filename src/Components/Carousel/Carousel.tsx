@@ -28,7 +28,7 @@ const Carousel = () => {
   return (
     <div className="relative flex justify-center w-full rounded-xl overflow-hidden">
     {/* Carousel Container */}
-    <div className="relative w-[75%] md:w-full h-[400px] overflow-hidden">
+    <div className="relative w-full md:w-[75%] h-[400px] overflow-hidden">
       <AnimatePresence custom={currentIndex}>
         {images.map((image, index) => (
           index === currentIndex && (
