@@ -26,7 +26,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative flex justify-center w-full rounded-xl overflow-hidden">
+    <div className="relative flex justify-center w-full md:rounded-xl overflow-hidden">
     {/* Carousel Container */}
     <div className="relative w-full h-[400px] overflow-hidden">
       <AnimatePresence custom={currentIndex}>
