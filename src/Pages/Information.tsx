@@ -22,7 +22,7 @@ const Information: React.FC<Props> = ({setopenModal}) => {
   }
   return (
     <div className='w-full flex flex-col'>
-      <div className='px-10 py-8'>
+      <div className='md:px-10 md:py-8'>
         <Carousel />
       </div>
       <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-3 md:gap-8'>
