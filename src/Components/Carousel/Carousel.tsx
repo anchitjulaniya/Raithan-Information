@@ -16,6 +16,8 @@ const images = [
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [startX, setStartX] = useState(0);
+  const [currentX, setCurrentX] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,6 +32,21 @@ const Carousel = () => {
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const distance = endX - startX;
+
+    if (distance > 50) {
+      goToPrevious();
+    } else if (distance < -50) {
+      goToNext();
+    }
   };
 
   return (
@@ -47,19 +64,21 @@ const Carousel = () => {
               animate={{ x: index === currentIndex ? "0%" : "100%" }}
               exit={{ x: "-100%" }}
               transition={{ duration: 1 }}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
             />
           ))}
         </AnimatePresence>
 
         {/* Navigation Buttons */}
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 z-10"
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 z-10 md:block hidden"
           onClick={goToPrevious}
         >
           &#10094;
         </button>
         <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-2 z-10"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-2 z-10 md:block hidden"
           onClick={goToNext}
         >
           &#10095;
