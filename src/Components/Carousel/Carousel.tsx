@@ -72,13 +72,13 @@ const Carousel = () => {
 
         {/* Navigation Buttons */}
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 z-10 md:block hidden"
+          className="cursor-pointer absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 z-10 md:block hidden"
           onClick={goToPrevious}
         >
           &#10094;
         </button>
         <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-2 z-10 md:block hidden"
+          className="cursor-pointer absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-2 z-10 md:block hidden"
           onClick={goToNext}
         >
           &#10095;
