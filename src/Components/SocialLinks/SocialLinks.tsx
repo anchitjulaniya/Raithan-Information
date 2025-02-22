@@ -20,11 +20,12 @@ const SocialLinks = () => {
               fill="currentColor"
               className="bi bi-twitter"
               viewBox="0 0 16 16"
+              xmlSpace="preserve"
             >
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.01-.422A6.68 6.68 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.816 6.588 6.588 0 0 1-2.087.797A3.28 3.28 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.766-3.429 3.273 3.273 0 0 0 1.016 4.37 3.287 3.287 0 0 1-1.485-.409v.04c0 1.523 1.087 2.792 2.526 3.08a3.286 3.286 0 0 1-1.482.056 3.285 3.285 0 0 0 3.067 2.282 6.572 6.572 0 0 1-4.067 1.398c-.265 0-.528-.016-.789-.046A9.287 9.287 0 0 0 5.026 15"></path>
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.01-.422A6.68 6.68 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.816 6.588 6.588 0 0 1-2.087.797A3.28 3.28 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.766-3.429 3.273 3.273 0 0 0 1.016 4.37 3.287 3.287 0 0 1-1.485-.409v.04c0 1.523 1.087 2.792 2.526 3.08a3.286 3.286 0 0 1-1.482.056 3.285 3.285 0 0 0 3.067 2.282 6.572 6.572 0 0 1-4.067 1.398c-.265 0-.528-.016-.789-.046A9.287 9.287 0 0 0 5.026 15" fill="currentColor"></path>
             </svg>
           </a>
-          <div className="tooltip">Twitter</div>
+          {/* <div className="tooltip">Twitter</div> */}
         </li>
 
         <li className="icon-content">
@@ -49,7 +50,7 @@ const SocialLinks = () => {
               ></path>
             </svg>
           </a>
-          <div className="tooltip">Instagram</div>
+         
         </li>
         <li className="icon-content">
           <a
@@ -73,7 +74,7 @@ const SocialLinks = () => {
               ></path>
             </svg>
           </a>
-          <div className="tooltip">Youtube</div>
+          {/* <div className="tooltip">Youtube</div> */}
         </li>
         <li className="icon-content">
           <a
@@ -97,7 +98,7 @@ const SocialLinks = () => {
               ></path>
             </svg>
           </a>
-          <div className="tooltip">LinkedIn</div>
+          {/* <div className="tooltip">LinkedIn</div> */}
         </li>
       </ul>
     </div>

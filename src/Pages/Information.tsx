@@ -10,6 +10,7 @@ import PaddyTransplantors from '../assets/Images/Equipments/PaddyTransplantors.j
 import Mechanics from '../assets/Images/Equipments/Mechanics.png'
 import ImageCard from '../Components/ImageCard/ImageCard'
 import Carousel from '../Components/Carousel/Carousel'
+import Header from '../Components/Header/Header'
 interface Props {
   setopenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -22,6 +23,7 @@ const Information: React.FC<Props> = ({setopenModal}) => {
   }
   return (
     <div className='w-full flex flex-col'>
+      <Header />
       <div className='md:px-10 md:py-8'>
         <Carousel />
       </div>
@@ -30,6 +32,8 @@ const Information: React.FC<Props> = ({setopenModal}) => {
         <ImageCard Click={handleClickImageCard} imageSrc={EarthMovers} altText="Earth Movers" label="Earth Movers" />
         <ImageCard Click={handleClickImageCard} imageSrc={PaddyTransplantors} altText="Paddy Transplantors" label="Paddy Transplantors" />
         <ImageCard Click={handleClickImageCard} imageSrc={Drones} altText="Drones" label="Drones" />
+      </div>
+      <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-3 md:gap-8'>
         <ImageCard Click={handleClickImageCard} imageSrc={Harvestor} altText="Harvestor" label="Harvestor" />
         <ImageCard Click={handleClickImageCard} imageSrc={AgricultureLabour} altText="Agriculture Labour" label="Agriculture Labour" />
         <ImageCard Click={handleClickImageCard} imageSrc={Mechanics} altText="Mechanics" label="Mechanics" />
