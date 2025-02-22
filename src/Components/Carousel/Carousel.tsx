@@ -17,7 +17,6 @@ const images = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(0);
-  const [currentX, setCurrentX] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,11 +33,11 @@ const Carousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: any) => {
     setStartX(e.touches[0].clientX);
   };
 
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = (e: any) => {
     const endX = e.changedTouches[0].clientX;
     const distance = endX - startX;
 
